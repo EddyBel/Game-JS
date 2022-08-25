@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+.app {
+  width: 100%;
+  height: 100vh;
+  /* min-height: 100vh; */
+  background-color: #fefefe;
+  background-image: linear-gradient(135deg, #8bc5ec77 0%, #9599e280 100%),
+    url("https://images7.alphacoders.com/333/thumb-1920-333223.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+/* Contadores */
+.count-coins {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #fefefe;
+  width: 50%;
+  margin: auto;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* Caja de juego */
+.box-game {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  min-height: 85vh;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  /* border: 1px solid rgba(255, 255, 255, 0.582); */
+  /* background-color: #8ec5fc; */
+  background-image: linear-gradient(62deg, #8ec5fc56 0%, #e0c3fc48 100%);
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+/* jugador principal */
+.cube {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  background: white;
+  /* border: 2px #000 solid; */
+  position: absolute;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+  background-image: url("https://fondosmil.com/fondo/26580.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+}
+/* Enemigos */
+.cube.evil {
+  /* background: black; */
+  position: absolute;
+  /* border: 2px #fff solid; */
+  background-image: url("https://s.itl.cat/pngfile/s/185-1850483_free-super-mario-bros-super-mario-fondos-de.jpg");
+}
